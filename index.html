@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Marvel Character</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess the Marvel Character</h1>
+
+    <div id="game">
+        <label for="category">Choose Category:</label>
+        <select id="category">
+            <option value="mcu">MCU</option>
+            <option value="comics">Comics</option>
+            <option value="mix">Mix</option>
+        </select>
+
+        <div id="image-container">
+            <img id="character-image" src="" alt="Character Image">
+        </div>
+
+        <!-- Dropdown for selecting the answer -->
+        <div id="answer-dropdown" class="dropdown">
+            <button id="dropdown-btn" class="dropbtn">Select the character</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <!--js code will populate this-->
+            </div>
+        </div>
+
+        <button id="guess-btn">Submit Guess</button>
+        <button id="hint-btn">Hint</button>
+
+        <p id="hint"></p>
+        <p id="score">Score: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
